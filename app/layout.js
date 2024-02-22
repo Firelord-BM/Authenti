@@ -14,10 +14,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="stylesheet" href={inter.href} />
-        {/* Add other head elements here */}
-      </Head>
       <AuthProvider>
         <body className={`${inter.className} bg-gray-100`}>
           <Nav />
